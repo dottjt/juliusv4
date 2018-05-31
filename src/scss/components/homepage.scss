@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 2rem;
+  padding: 1rem;
+
+  .title__main {
+    font-size: 3rem;
+  }
+
+  .title__secondary {
+    font-size: 1.4rem;
+
+    margin-top: 1.4rem;
+
+  }
+
+  .title__category {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    text-decoration: none;
+
+    li {
+      
+    }
+  }
+}
+
+@media screen and (min-width: 475px) {
+
+}
