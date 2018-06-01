@@ -78,10 +78,10 @@ h1, h2, h3, h4, h5, h6, p {
     }
   }
 
-  .personal__first {
-    padding-top: 0rem!important;
-    border-top: 0!important;
-  }
+  // .personal__first {
+  //   padding-top: 0rem!important;
+  //   border-top: 0!important;
+  // }
 
   .personal {
     font-weight: 900;
@@ -120,11 +120,12 @@ h1, h2, h3, h4, h5, h6, p {
       
       border: 10px solid black;
 
-      height: 300px;
+      height: 341px;
       overflow: scroll;
+      
+      // width: 600px;
 
       .personal__screenshot {
-        // width: 700px;
         width: 100%;
       }
     }
@@ -148,22 +149,3 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-
-@media screen and (min-width: 425px) {
-  .container {
-    .personal {
-      .personal__screenshot__container {
-        margin-top: 1rem;
-        
-        border: 10px solid black;
-  
-        height: 300px;
-        overflow: scroll;
-  
-        .personal__screenshot {
-          width: 400px;
-        }
-      }
-    }
-  }  
-}
