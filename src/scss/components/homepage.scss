@@ -120,8 +120,9 @@ h1, h2, h3, h4, h5, h6, p {
       
       border: 10px solid black;
 
-      height: 341px;
-      overflow: scroll;
+      height: 200px;
+      // overflow: scroll;
+      overflow: hidden;
       
       // width: 600px;
 
@@ -149,3 +150,32 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (min-width: 450px) {
+  .container {    
+    .personal {
+      .personal__screenshot__container {
+        height: 250px;
+      }  
+    }
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .container {    
+    .personal {
+      .personal__screenshot__container {
+        height: 300px;
+      }  
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {    
+    .personal {
+      .personal__screenshot__container {
+        height: 341px;
+      }  
+    }
+  }
+}
