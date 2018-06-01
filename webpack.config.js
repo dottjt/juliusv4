@@ -4,7 +4,9 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const RobotstxtPlugin = require("robotstxt-webpack-plugin").default;
 
+const robotsOptions = {}; 
 const paths = [
   {
     path: '/',
@@ -60,6 +62,7 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
-    new SitemapPlugin('https://juliusreade.com', paths)
+    new SitemapPlugin('https://juliusreade.com', paths),
+    new RobotstxtPlugin(robotsOptions)
   ],
 };
