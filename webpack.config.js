@@ -3,6 +3,16 @@ const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
+
+const paths = [
+  {
+    path: '/',
+    lastMod: new Date().toISOString(),
+    priority: '1',
+    changeFreq: 'weekly'
+  }
+];
 
 module.exports = {
   mode: "development",
@@ -49,6 +59,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new SitemapPlugin('https://juliusreade.com', paths)
   ],
 };
