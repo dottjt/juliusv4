@@ -3,7 +3,7 @@ body {
   justify-content: center;
 
   background: #fefefe;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p {
       text-decoration: none;
       cursor: pointer;
   
-      color: black;
+      color: #009bff;
   
       margin-bottom: 0.2rem;
 
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .personal__title:hover {
-      color: #009bff;
+      color: darken(#009bff, 10%);
     }
   
     .personal__description--short {
@@ -124,7 +124,8 @@ h1, h2, h3, h4, h5, h6, p {
       overflow: scroll;
 
       .personal__screenshot {
-        width: 700px;
+        // width: 700px;
+        width: 100%;
       }
     }
 
@@ -145,4 +146,24 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 2.2rem;
     font-weight: 900;
   }
+}
+
+
+@media screen and (min-width: 425px) {
+  .container {
+    .personal {
+      .personal__screenshot__container {
+        margin-top: 1rem;
+        
+        border: 10px solid black;
+  
+        height: 300px;
+        overflow: scroll;
+  
+        .personal__screenshot {
+          width: 400px;
+        }
+      }
+    }
+  }  
 }
